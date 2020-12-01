@@ -1,0 +1,16 @@
+<%- include ('partials/header')%>
+
+    <div class="badge-container">
+
+        <div class="row">
+        <% for (const type of types) { %>
+            <div class="col-sm-3">
+                <a href="/type/<%=type.id%>" class="badge badge-primary" style="background-color: #<%=type.color%>;"><h3><%=type.name%></h3></a>
+            </div>
+        <% } %>
+        </div>
+    </div>
+    
+
+<%- include('partials/footer') %>
+

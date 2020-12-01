@@ -1,0 +1,82 @@
+<%- include ('partials/header')%>
+
+    <!-- fin header -->   
+    <% if (locals.pokemon) { %>
+        <h2 class="detail-title">Détail de <%=pokemon.nom%></h2>  
+    <div class="row">
+        <div class="col-sm-4">
+                <img class="card-img" src="/img/<%=pokemon.numero%>.png" alt="<%=pokemon.nom%>">
+        </div>
+        <div class="col-sm-8">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">
+                    #<%=pokemon.numero%> <%=pokemon.nom%></h3> 
+                        <div class="badge-container">
+                            <%for (const category of categories) {%>
+                            <h5>
+                                <a href="/type/<%=category.id%>">
+                                <span class="badge badge-secondary" style="background-color:#<%=category.color%>;"><%=category.name%></span></a>
+                            </h5>
+                            <% } %>
+                        </div>
+                    <h4 class="card-title">Statistiques</h4>
+                        <table class="table table-borderless table-sm">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">PV</th>
+                                    <td class="td-stat"><%=pokemon.pv%></td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width:<%=Math.round(pokemon.pv*100/255)%>%;" aria-valuenow="<%=pokemon.pv%>" aria-valuemax="255"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Attaque</th>
+                                    <td class="td-stat"><%=pokemon.attaque%></td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width:<%=Math.round(pokemon.attaque*100/255)%>%;" aria-valuenow="<%=pokemon.attaque%>" aria-valuemax="255"></div>
+                                        </div>
+                                    </td>
+                                <tr>
+                                    <th scope="row">Attaque Spé.</th>
+                                    <td class="td-stat"><%=pokemon.attaque_spe%></td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width:<%=Math.round(pokemon.attaque_spe*100/255)%>%;" aria-valuenow="<%=pokemon.attaque_spe%>" aria-valuemax="255"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Défense Spé.</th>
+                                    <td class="td-stat"><%=pokemon.defense_spe%></td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: <%=Math.round(pokemon.defense_spe*100/255)%>%;" aria-valuenow="<%=pokemon.defense_spe%>" aria-valuemax="255"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Vitesse</th>
+                                    <td class="td-stat"><%=pokemon.vitesse%></td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width:<%=Math.round(pokemon.vitesse*100/255)%>%;" aria-valuenow="<%=pokemon.vitesse%>" aria-valuemax="255"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>  
+                </div>
+            </div>
+        </div>
+
+       
+       <% } %>
+
+        </div>
+        <!-- /.row -->
+
+<%- include('partials/footer') %>

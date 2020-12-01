@@ -1,0 +1,25 @@
+<%- include ('partials/header')%>
+
+<% if(locals.pokemons) { %>
+
+<div class="row">
+    <% for (const pokemon of pokemons) { %>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100 hover-red">
+                <a href="/pokemon/<%=pokemon.numero%>">
+                <img class="card-img" src="/img/<%=pokemon.numero%>.png" alt="<%=pokemon.nom%>"></a>
+                    <div class="card-body-center">
+                        <figcaption class="card-title">
+                            <a href="/pokemon/<%=pokemon.numero%>">#<%=pokemon.numero%> <%=pokemon.nom%></a>
+                        </figcaption>
+                    </div>
+            </div>
+        </div>
+    <% } %>
+        </div>
+<% } else { %>
+    <p>Aucun pokemon dans cette liste</p>
+<% } %>
+
+<%- include('partials/footer') %>
+

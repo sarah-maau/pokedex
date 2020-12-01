@@ -1,0 +1,187 @@
+/* GENERAL CSS */
+*, 
+.header a,
+footer {
+    font-family: 'Bree Serif', serif;
+    color: rgb(237, 226, 226)
+}
+
+.body {
+    padding-top: 0.8em;
+    background-color: rgb(179,53,60);
+    margin: 0 0.8em 0 0.8em;
+}
+
+.header {
+    background-color: rgb(237, 226, 226);
+    border-radius: 1em;
+    display: flex;
+    justify-content: space-between;
+    top: 0.3em;
+    width: 100%;
+    z-index: 1;
+    border: none;
+}
+
+.detail-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom:0.8em;
+}
+
+.header a {
+    color: rgb(179,53,60);
+    text-decoration: none;
+    padding: 0.8em;
+}
+
+.header .sitename {
+    font-size: 1.5em;
+}
+
+.header nav {
+    align-self: center;
+}
+
+a {
+    color: rgb(237, 226, 226);
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: none;
+    color:rgb(179,53,60) ;
+    /* opacity: 0.5; */
+}
+
+.hover-red:hover {
+    opacity: 0.7;
+}
+
+.main-container {
+    margin-top: 1em;
+}
+
+
+.footer {
+    color: rgb(237, 226, 226);
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Modal breakpoint is awful in bootstrap */
+@media (min-width: 576px) {
+    .modal-dialog {
+      width: 80%;
+      max-width: unset;
+    }
+  }
+
+  /* POKEMON LIST YANN*/
+
+.pokemon-list a{
+    text-decoration: none;
+}
+
+.pokemon-list figure{
+    border-radius: 1.5em;
+    background-color: #982D2C;
+    color: #F9D2D3;
+    text-align: center;
+}
+
+.pokemon-list img{
+    width:100%;
+}
+
+/* TYPE LIST YANNA*/
+
+.type-list a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    border-radius: 1em;
+}
+
+/* HOME PAGE */
+.card {
+    background-color: rgb(141, 35, 42) ;
+    border-radius: 1.2em;
+    border: none;
+}
+
+.card-body-center {
+    text-align: center;
+}
+
+.card-img {
+    width: 80%;
+    margin:1em;
+}
+
+.card-title{
+    font-size: 1.2em;
+}
+
+
+/* TYPE LIST */
+
+.col-sm-3 {
+    margin-bottom: 1em;
+}
+
+
+/* POKEMON PAGE */
+th {
+    width: 25%;
+}
+
+.td-stat {
+    width:10%;
+}
+
+.progress {
+    background-color: rgb(94, 43, 45);
+    height: 1.5em;
+}
+
+.progress-bar {
+    background-color:rgb(237, 226, 226);
+}
+
+.badge-container {
+    display: flex;
+}
+
+.badge {
+    margin-right: 1em;
+    padding: 0.6em;
+    font-weight: lighter;
+}
+
+.badge-primary {
+    width:100%
+}
+
+/* ERROR PAGE */
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.error h2{
+    font-size: 10em;
+}
+
+.error p{
+    font-size: 2em;
+}
+
+.error img{
+    width:100%;
+}
