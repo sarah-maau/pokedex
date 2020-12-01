@@ -3,7 +3,7 @@
 .header a,
 footer {
     font-family: 'Bree Serif', serif;
-    color: rgb(237, 226, 226)
+    color: rgb(237, 226, 226);
 }
 
 .body {
@@ -47,12 +47,17 @@ footer {
 a {
     color: rgb(237, 226, 226);
     text-align: center;
+    font-size: 1.2em;
+}
+
+.white-link:hover {
+    color: rgb(237, 226, 226);
 }
 
 a:hover {
     text-decoration: none;
     color:rgb(179,53,60) ;
-    /* opacity: 0.5; */
+    
 }
 
 .hover-red:hover {
@@ -69,42 +74,17 @@ a:hover {
     text-align: center;
     bottom: 0;
     width: 100%;
+    margin-top: 2em;
 }
 
 /* Modal breakpoint is awful in bootstrap */
 @media (min-width: 576px) {
     .modal-dialog {
-      width: 80%;
-      max-width: unset;
+        width: 80%;
+        max-width: unset;
     }
-  }
-
-  /* POKEMON LIST YANN*/
-
-.pokemon-list a{
-    text-decoration: none;
 }
 
-.pokemon-list figure{
-    border-radius: 1.5em;
-    background-color: #982D2C;
-    color: #F9D2D3;
-    text-align: center;
-}
-
-.pokemon-list img{
-    width:100%;
-}
-
-/* TYPE LIST YANNA*/
-
-.type-list a{
-    display: block;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    border-radius: 1em;
-}
 
 /* HOME PAGE */
 .card {

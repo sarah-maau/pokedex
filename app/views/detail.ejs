@@ -1,11 +1,10 @@
 <%- include ('partials/header')%>
 
-    <!-- fin header -->   
-    <% if (locals.pokemon) { %>
-        <h2 class="detail-title">Détail de <%=pokemon.nom%></h2>  
-    <div class="row">
+<% if (locals.pokemon) { %>
+    <h2 class="detail-title">Détail de <%=pokemon.nom%></h2>  
+        <div class="row">
         <div class="col-sm-4">
-                <img class="card-img" src="/img/<%=pokemon.numero%>.png" alt="<%=pokemon.nom%>">
+            <img class="card-img" src="/img/<%=pokemon.numero%>.png" alt="<%=pokemon.nom%>">
         </div>
         <div class="col-sm-8">
             <div class="card">
@@ -69,14 +68,14 @@
                                 </tr>
                             </tbody>
                         </table>  
+                    </div>  
                 </div>
-            </div>
-        </div>
+            </div> 
+            <footer class="footer">
+                <a class="white-link" href="/">Revenir à la liste</a>
+            </footer>
+    <% } %>
+</div>
 
-       
-       <% } %>
-
-        </div>
-        <!-- /.row -->
 
 <%- include('partials/footer') %>
