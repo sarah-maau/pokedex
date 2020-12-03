@@ -68,7 +68,6 @@ a:hover {
     margin-top: 1em;
 }
 
-
 .footer {
     color: rgb(237, 226, 226);
     text-align: center;
@@ -84,7 +83,6 @@ a:hover {
         max-width: unset;
     }
 }
-
 
 /* HOME PAGE */
 .card {
@@ -105,7 +103,6 @@ a:hover {
 .card-title{
     font-size: 1.2em;
 }
-
 
 /* TYPE LIST */
 

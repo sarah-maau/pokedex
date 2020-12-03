@@ -6,6 +6,8 @@ const router = express.Router();
 const mainController = require('./controllers/mainController');
 
 // routes
+router.use(mainController.initVar);
+
 router.get('/', mainController.homePage);
 
 router.get('/pokemon/:numero', mainController.detailPage);
