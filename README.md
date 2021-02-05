@@ -43,19 +43,35 @@ J'ai codé ce projet en 1 jour.
 
 ## Installation 
 
-Une fois le repo cloné, installez les dépendances 
+1. Cloner le repo 
+- en utilisant la clé SSH
+```
+git clone git@github.com:sarah-maau/pokedex.git
+```
+- en utilisant HTTPS
+```
+git clone https://github.com/sarah-maau/pokedex.git
+```
+
+2. Installer les dépendances 
 
 ```
 npm i
 ```
 
-Crééz un fichier .env reprenant les informations fournies dans le document `.env.example`
-
-Créez une base de donnée, puis chargez les tables et les données 
+3. Créer un fichier .env reprenant les informations fournies dans le document `.env.example`
+   
+4. Créer une base de donnée, puis chargez les tables et les données 
+   
 ```
 psql -d <nom de la base de données> -f ./data/pokedex.sql
 ```
-Il ne reste plus qu'à lancer le script 
+
+5. Lancer le script
+
 ```
 npm start
 ```
+
+## Licence
+Ce projet est sous licence MIT - voir le fichier LICENSE.md pour plus de détails
