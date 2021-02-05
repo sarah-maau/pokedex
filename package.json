@@ -4,14 +4,15 @@
   "description": "Un pokédex, est une sorte de dictionnaire de tous les pokémon (petites créatures fictives et adorables). Ces derniers peuvent se battre et disposent de caractéristiques de combat appelées statistiques. Chaque pokémon possède aussi un ou deux types (plante, roche, feu...).",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sarah-maau/pokedex.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Sarah Maury",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sarah-maau/pokedex/issues"
