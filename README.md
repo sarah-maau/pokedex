@@ -2,7 +2,7 @@
 
 Ce pokédex recense les 151 pokemon de la région de Kanto.  
 
-J'ai entièrement réalisé ce projet NodeJS lors de mon deuxième mois de formation en développement web FS JavaScript.
+J'ai entièrement réalisé ce projet Node.js lors de mon deuxième mois de formation en développement web FS JavaScript.
 
 Ce site est responsive.
 
@@ -58,14 +58,14 @@ git clone https://github.com/sarah-maau/pokedex.git
 ```
 npm i
 ```
-
-3. Créer un fichier .env reprenant les informations fournies dans le document `.env.example`
-   
-4. Créer une base de donnée, puis chargez les tables et les données 
+ 
+3. Créer une base de données, puis chargez les tables et les données 
    
 ```
 psql -d <nom de la base de données> -f ./data/pokedex.sql
 ```
+
+4. Créer un fichier .env reprenant les informations fournies dans le document `.env.example`
 
 5. Lancer le script
 
