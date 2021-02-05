@@ -73,5 +73,5 @@ psql -d <nom de la base de données> -f ./data/pokedex.sql
 npm start
 ```
 
-## Licence
-Ce projet est sous licence MIT - voir le fichier LICENSE.md pour plus de détails
+## License
+Ce projet est sous licence MIT - voir le fichier `LICENSE.md` pour plus de détails
