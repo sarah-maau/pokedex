@@ -17,7 +17,7 @@ J'ai codé ce projet en 1 jour.
 - JavaScript 
 - SQL 
   
- ![pokemon_db](database_design.png)
+ ![pokemon_db](docs/database_design.png)
 
  ## Stacks
  - Node.js
@@ -30,18 +30,20 @@ J'ai codé ce projet en 1 jour.
 ## Screenshots
 
 ### Home page
-![pokemon_homepage](result/home.png)
+![pokemon_homepage](docs/result/home.png)
 
 ### Pokemon page
-![pokemon_page](result/detail.png)
+![pokemon_page](docs/result/detail.png)
 
 ### Types page
-![pokemon_types](result/types.png)
+![pokemon_types](docs/result/types.png)
 
 ### Types of pokemon page
-![pokemon_type](result/electrik.png)
+![pokemon_type](docs/result/electrik.png)
 
 ## Installation 
+
+**Node est requis pour utiliser ce code, pour le télécharger c'est [ici](https://nodejs.org/en/download/)** :) 
 
 1. Cloner le repo 
 - en utilisant la clé SSH
@@ -72,6 +74,9 @@ psql -d <nom de la base de données> -f ./data/pokedex.sql
 ```
 npm start
 ```
+
+## Auteur
+Sarah Maury - [GitHub](https://github.com/sarah-maau) - [LinkedIn](https://www.linkedin.com/in/sarahmaurydev/)
 
 ## License
 Ce projet est sous licence MIT - voir le fichier `LICENSE.md` pour plus de détails
