@@ -43,7 +43,9 @@ J'ai codé ce projet en 1 jour.
 
 ## Installation 
 
-**Node est requis pour utiliser ce code, pour le télécharger c'est [ici](https://nodejs.org/en/download/)** :) 
+**Pré-requis**
+- Node.js pour le télécharger c'est [ici](https://nodejs.org/en/download/)
+- PostgreSQL
 
 1. Cloner le repo 
 - en utilisant la clé SSH
@@ -67,7 +69,7 @@ npm i
 psql -d <nom de la base de données> -f ./data/pokedex.sql
 ```
 
-4. Créer un fichier .env reprenant les informations fournies dans le document `.env.example`
+4. Renommer le fichier `.env.example` en `.env` avec vos variables d'environnement
 
 5. Lancer le script
 
